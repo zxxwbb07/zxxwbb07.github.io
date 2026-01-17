@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #1d2671, #c33764);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fade 1s;
+}
+
+.screen.active {
+  display: block;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.text {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.love {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
